@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>BadLibs: Medium</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="shortcut icon" href="https://img.icons8.com/nolan/64/000000/edit--v2.png" type="image/png">
+	</head>
+
+	<body>
+		<main>
+		<div class="header-image"><span class="header-text">
+		<h1>BadLibs</h1>
+		<h3>Fill in the blanks!</h3>
+		</span></div></main>
+		<br><br><br>
+		<nav>
+			<a href="index.html"><div>Home</div></a>
+			<a href="small.html"><div>Small</div></a>
+			<a href="medium.html"><div>-Medium-</div></a>
+			<a href="large.html"><div>Large</div></a>
+		</nav>
+
+		<br><br><br>
+		<h2>Medium</h2>
+
+		<form name="catch-form" onsubmit="return validateForm()">
+			<fieldset>
+				<legend>NOUNS:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "catch-noun1" />
+						<label>Noun</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-noun2" />
+						<label>Abstract noun 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-noun3" />
+						<label>Abstract noun 2</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-noun4" />
+						<label>Pronoun</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-noun5" />
+						<label>Internal organ</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>ADJECTIVES:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "catch-adjective1" />
+						<label>Adjective 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-adjective2" />
+						<label>Adjective 2</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>VERBS:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "catch-verb1" />
+						<label>Verb 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-verb2" />
+						<label>Verb 2</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-verb3" />
+						<label>Verb 3</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-verb4" />
+						<label>Verb 4</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "catch-verb5" />
+						<label>-ing suffix</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>PREPOSITIONS:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "catch-preposition1">
+						<label>Location/Direction</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>INTERJECTIONS:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "catch-interjection1">
+						<label>Interjection</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<input type="button" value="Submit" id="submit-catch">
+		</form>
+
+		<p><span id="result"></span></p>
+
+		<script>
+		function validateForm() {
+			var noun1 = document.getElementById("catch-noun1").value;
+			var noun2 = document.getElementById("catch-noun2").value;
+			var noun3 = document.getElementById("catch-noun3").value;
+			var noun4 = document.getElementById("catch-noun4").value;
+			var noun5 = document.getElementById("catch-noun5").value;
+			var adjective1 = document.getElementById("catch-adjective1").value;
+			var adjective2 = document.getElementById("catch-adjective2").value;
+			var verb1 = document.getElementById("catch-verb1").value;
+			var verb2 = document.getElementById("catch-verb2").value;
+			var verb3 = document.getElementById("catch-verb3").value;
+			var verb4 = document.getElementById("catch-verb4").value;
+			var verb5 = document.getElementById("catch-verb5").value;
+			var preposition1 = document.getElementById("catch-preposition1").value;
+			var interjection1 = document.getElementById("catch-interjection1").value;
+			if (noun1 === "" || noun2 === "" || noun3 === "" || noun4 === "" || noun5 === "" || adjective1 === "" || adjective2 === "" || verb1 === "" || verb2 === "" || verb3 === "" || verb4 === "" || verb5 === "" || preposition1 === "" || interjection1 === "") {
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+
+		function catchResult() {
+			if (validateForm() === true) {
+				var noun1 = document.getElementById("catch-noun1").value;
+				var noun2 = document.getElementById("catch-noun2").value;
+				var noun3 = document.getElementById("catch-noun3").value;
+				var noun4 = document.getElementById("catch-noun4").value;
+				var noun5 = document.getElementById("catch-noun5").value;
+				var adjective1 = document.getElementById("catch-adjective1").value;
+				var adjective2 = document.getElementById("catch-adjective2").value;
+				var verb1 = document.getElementById("catch-verb1").value;
+				var verb2 = document.getElementById("catch-verb2").value;
+				var verb3 = document.getElementById("catch-verb3").value;
+				var verb4 = document.getElementById("catch-verb4").value;
+				var verb5 = document.getElementById("catch-verb5").value;
+				var preposition1 = document.getElementById("catch-preposition1").value;
+				var interjection1 = document.getElementById("catch-interjection1").value;
+
+// Note: This is so UGLY!!!
+				var html = '<h2>Pok&eacute;mon: Indigo League Theme<br>(Jason Paige)</h2><br><figure class="video"><iframe class="video" height="240" width="320" src="https://www.youtube.com/embed/pJ8heSeHX48?start=4">Your browser does not support the sing-along feature. Sorry!</iframe><figcaption>Sing along with your lyrics!</figcaption></figure><br>I wanna be the very best<br>like no one ever was<br>To <span class="hover"><font color="FBD8FF">' + verb1 + '</font><span class="hover-text">Verb 1</span></span> them is my <span class="hover"><font color="FBD8FF">' + adjective1 + '</font><span class="hover-text">Adjective 1</span></span> test<br>To <span class="hover"><font color="FBD8FF">' + verb2 + '</font><span class="hover-text">Verb 2</span></span> them is my cause<br>I will travel <span class="hover"><font color="FBD8FF">' + preposition1 + '</font><span class="hover-text">Preposition 1: Location/Direction</span></span> the land<br><span class="hover"><font color="FBD8FF">' + verb5 + '</font><span class="hover-text">Verb 5: -ing suffix</span></span> far and wide<br>Each Pok&eacute;mon to understand<br>the <span class="hover"><font color="FBD8FF">' + noun2 + '</font><span class="hover-text">Noun 2: Abstract</span></span> that\'s inside<br>Pok&eacute;mon! (gotta <span class="hover"><font color="FBD8FF">' + verb1 + '</font><span class="hover-text">Verb 1</span></span> \'em all)<br>It\'s <span class="hover"><font color="FBD8FF">' + noun4 + '</font><span class="hover-text">Noun 4: Pronoun</span></span> and me<br>I know it\'s my destiny<br>Pok&eacute;mon!<br> <span class="hover"><font color="FBD8FF">' + interjection1 + '</font><span class="hover-text">Interjection 1</span></span>, you\'re my <span class="hover"><font color="FBD8FF">' + adjective2 + '</font><span class="hover-text">Adjective 2</span></span> friend<br>in a <span class="hover"><font color="FBD8FF">' + noun1 + '</font><span class="hover-text">Noun 1</span></span> we must defend<br>Pok&eacute;mon! (gotta <span class="hover"><font color="FBD8FF">' + verb1 + '</font><span class="hover-text">Verb 1</span></span> \'em all)<br>A <span class="hover"><font color="FBD8FF">' + noun5 + '</font><span class="hover-text">Noun 5: Internal organ</span></span> so true<br>Our <span class="hover"><font color="FBD8FF">' + noun3 + '</font><span class="hover-text">Noun 3: Abstract</span></span> will <span class="hover"><font color="FBD8FF">' + verb3 + '</font><span class="hover-text">Verb 3</span></span> us through<br>You <span class="hover"><font color="FBD8FF">' + verb4 + '</font><span class="hover-text">Verb 4</span></span> me and I\'ll <span class="hover"><font color="FBD8FF">' + verb4 + '</font><span class="hover-text">Verb 4</span></span> you<br>Pok&eacute;mon!<br>Gotta <span class="hover"><font color="FBD8FF">' + verb1 + '</font><span class="hover-text">Verb 1</span></span> \'em all (Gotta <span class="hover"><font color="FBD8FF">' + verb1 + '</font><span class="hover-text">Verb 1</span></span> \'em all)<br>Pok&eacute;mon!<br><br><br><a href="https://genius.com/Scott-bradlees-postmodern-jukebox-pokemon-indigo-league-theme-song-lyrics" id="pokemon-lyrics-link" target="_blank">View original lyrics</a><br>Original songwriters: John Siegler, John Loeffler';
+
+				document.getElementById("result").innerHTML = html;
+			}
+			else {
+				alert("Oops! You left a blank :o");
+			}
+			}
+		document.getElementById("submit-catch").addEventListener("click", catchResult);
+		</script>
+
+		<br><br><br><br><br><br>
+		<div class="footer">
+			Image Credits: <a href="https://icons8.com/icon/56304/edit" class="footer-link" target="_blank">Favicon</a> -- <a href="https://unsplash.com/photos/NFs6dRTBgaM" class="footer-link" target="_blank">Geometric Header</a> -- <a href="https://unsplash.com/photos/POMpXtcVYHo" class="footer-link" target="_blank">Choose Your Words</a></div>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
