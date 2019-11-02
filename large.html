@@ -1,0 +1,267 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>BadLibs: Large</title>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="shortcut icon" href="https://img.icons8.com/nolan/64/000000/edit--v2.png" type="image/png">
+	</head>
+
+	<body>
+		<main>
+		<div class="header-image"><span class="header-text">
+		<h1>BadLibs</h1>
+		<h3>Fill in the blanks!</h3>
+		</span></div></main>
+		<br><br><br>
+		<nav>
+			<a href="index.html"><div>Home</div></a>
+			<a href="small.html"><div>Small</div></a>
+			<a href="medium.html"><div>Medium</div></a>
+			<a href="large.html"><div>-Large-</div></a>
+		</nav>
+
+		<br><br><br>
+		<h2>Large</h2>
+
+		<form action = >
+			<fieldset>
+				<legend>NOUNS:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun1" />
+						<label>Noun</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-newnoun" />
+						<label>Abstract Noun</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun2" />
+						<label>Proper noun 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun3" />
+						<label>Proper noun 2</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun4" />
+						<label>Job title 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun5" />
+						<label>Job title 2 (plural)</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun6" />
+						<label>Body part 1 (plural)</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun7" />
+						<label>Body part 2</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun8" />
+						<label>Body part 3</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun9" />
+						<label>Planet</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun10" />
+						<label>Insect</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun11" />
+						<label>Animal</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun12" />
+						<label>Natural disaster</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun13" />
+						<label>Insult 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-noun14" />
+						<label>Insult 2</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>ADJECTIVES:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "navy-adjective1" />
+						<label>Adjective 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-adjective2" />
+						<label>Adjective 2</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-adjective3" />
+						<label>Adjective 3</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-adjective4" />
+						<label>Adjective 4</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-adjective5" />
+						<label>Number 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-adjective6" />
+						<label>Number 2</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>VERBS:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "navy-verb1" />
+						<label>Verb 1</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-verb2" />
+						<label>Verb 2</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-verb3" />
+						<label>Verb 3</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-verb4" />
+						<label>-ing suffix</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-verb5" />
+						<label>Past tense</label></li>
+					<li><input type = "text" maxlength="30"
+						id = "navy-verb6" />
+						<label>Way to die</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>ADVERBS:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "navy-adverb1" />
+						<label>Adverb</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<fieldset>
+				<legend>PREPOSITIONS:</legend>
+				<ol>
+					<li><input type = "text" maxlength="30"
+						id = "navy-preposition1" />
+						<label>Location/Direction</label></li>
+				</ol>
+			</fieldset>
+
+			<br>
+			<input type="button" value="Submit" id="submit-navy">
+		</form>
+
+		<p><span id="result"></span></p>
+
+		<script>
+		function validateForm() {
+			var noun1 = document.getElementById("navy-noun1").value;
+			var newnoun = document.getElementById("navy-newnoun").value;
+			var noun2 = document.getElementById("navy-noun2").value;
+			var noun3 = document.getElementById("navy-noun3").value;
+			var noun4 = document.getElementById("navy-noun4").value;
+			var noun5 = document.getElementById("navy-noun5").value;
+			var noun6 = document.getElementById("navy-noun6").value;
+			var noun7 = document.getElementById("navy-noun7").value;
+			var noun8 = document.getElementById("navy-noun8").value;
+			var noun9 = document.getElementById("navy-noun9").value;
+			var noun10 = document.getElementById("navy-noun10").value;
+			var noun11 = document.getElementById("navy-noun11").value;
+			var noun12 = document.getElementById("navy-noun12").value;
+			var noun13 = document.getElementById("navy-noun13").value;
+			var noun14 = document.getElementById("navy-noun14").value;
+			var adjective1 = document.getElementById("navy-adjective1").value;
+			var adjective2 = document.getElementById("navy-adjective2").value;
+			var adjective3 = document.getElementById("navy-adjective3").value;
+			var adjective4 = document.getElementById("navy-adjective4").value;
+			var adjective5 = document.getElementById("navy-adjective5").value;
+			var adjective6 = document.getElementById("navy-adjective6").value;
+			var verb1 = document.getElementById("navy-verb1").value;
+			var verb2 = document.getElementById("navy-verb2").value;
+			var verb3 = document.getElementById("navy-verb3").value;
+			var verb4 = document.getElementById("navy-verb4").value;
+			var verb5 = document.getElementById("navy-verb5").value;
+			var verb6 = document.getElementById("navy-verb6").value;
+			var adverb1 = document.getElementById("navy-adverb1").value;
+			var preposition1 = document.getElementById("navy-preposition1").value;
+			if (noun1 === "" || noun2 === "" || noun3 === "" || noun4 === "" || noun5 === "" || noun6 === "" || noun7 === "" || noun8 === "" || noun9 === "" || noun10 === "" || noun11 === "" || noun12 === "" || noun13 === "" || noun14 === "" || adjective1 === "" || adjective2 === "" || adjective3 === "" || adjective4 === "" || adjective5 === "" || adjective6 === "" || verb1 === "" || verb2 === "" || verb3 === "" || verb4 === "" || verb5 === "" || verb6 === "" || adverb1 === "" || preposition1 === "") {
+				return false;
+			}
+			else {
+				return true;
+			}
+		}
+
+		function navyResult() {
+			if (validateForm() === true) {
+				var noun1 = document.getElementById("navy-noun1").value;
+				var newnoun = document.getElementById("navy-newnoun").value;
+				var noun2 = document.getElementById("navy-noun2").value;
+				var noun3 = document.getElementById("navy-noun3").value;
+				var noun4 = document.getElementById("navy-noun4").value;
+				var noun5 = document.getElementById("navy-noun5").value;
+				var noun6 = document.getElementById("navy-noun6").value;
+				var noun7 = document.getElementById("navy-noun7").value;
+				var noun8 = document.getElementById("navy-noun8").value;
+				var noun9 = document.getElementById("navy-noun9").value;
+				var noun10 = document.getElementById("navy-noun10").value;
+				var noun11 = document.getElementById("navy-noun11").value;
+				var noun12 = document.getElementById("navy-noun12").value;
+				var noun13 = document.getElementById("navy-noun13").value;
+				var noun14 = document.getElementById("navy-noun14").value;
+				var adjective1 = document.getElementById("navy-adjective1").value;
+				var adjective2 = document.getElementById("navy-adjective2").value;
+				var adjective3 = document.getElementById("navy-adjective3").value;
+				var adjective4 = document.getElementById("navy-adjective4").value;
+				var adjective5 = document.getElementById("navy-adjective5").value;
+				var adjective6 = document.getElementById("navy-adjective6").value;
+				var verb1 = document.getElementById("navy-verb1").value;
+				var verb2 = document.getElementById("navy-verb2").value;
+				var verb3 = document.getElementById("navy-verb3").value;
+				var verb4 = document.getElementById("navy-verb4").value;
+				var verb5 = document.getElementById("navy-verb5").value;
+				var verb6 = document.getElementById("navy-verb6").value;
+				var adverb1 = document.getElementById("navy-adverb1").value;
+				var preposition1 = document.getElementById("navy-preposition1").value;
+
+// Note: This is so UGLY!!!
+				var html = '<h2>Navy Seal Copypasta</h2><br><figure class="video"><iframe class="video" height="240" width="320" src="https://www.youtube.com/embed/hH0QoBMyvaY?start=1">Your browser does not support the sing-along feature. Sorry!</iframe><figcaption>Sing along with your lyrics!</figcaption></figure><br>What the fuck did you just fucking say about me, you little bitch?<br><br>I\'ll have you know I graduated top of my class in the Navy Seals, and I\'ve been involved in numerous <span class="hover"><font color="FBD8FF">' + adjective1 + '</font><span class="hover-text">Adjective 1</span></span> raids on <span class="hover"><font color="FBD8FF">' + noun2 + '</font><span class="hover-text">Noun 3: Proper</span></span>, and I have over <span class="hover"><font color="FBD8FF">' + adjective5 + '</font><span class="hover-text">Adjective 5: Number</span></span> confirmed kills.<br>I am trained in <span class="hover"><font color="FBD8FF">' + noun11 + '</font><span class="hover-text">Noun 12: Animal</span></span> warfare and I\'m the top <span class="hover"><font color="FBD8FF">' + noun4 + '</font><span class="hover-text">Noun 5: Job title</span></span> in the entire US armed forces.<br><br>You are nothing to me but just another <span class="hover"><font color="FBD8FF">' + noun1 + '</font><span class="hover-text">Noun 1</span></span>.<br>I will <span class="hover"><font color="FBD8FF">' + verb1 + '</font></font><span class="hover-text">Verb 1</span></span> you the fuck out with precision the likes of which has never been seen before on <span class="hover"><font color="FBD8FF">' + noun9 + '</font></font><span class="hover-text">Noun 10: Planet</span></span>, mark my words.<br>You think you can get away with <span class="hover"><font color="FBD8FF">' + verb4 + '</font></font><span class="hover-text">Verb 4: -ing suffix</span></span> shit to me over the internet?<br>Think again, <span class="hover"><font color="FBD8FF">' + noun13 + '</font></font><span class="hover-text">Noun 14: Insult</span></span>.<br><br>As we <span class="hover"><font color="FBD8FF">' + verb2 + '</font></font><span class="hover-text">Verb 2</span></span> I am contacting my secret network of <span class="hover"><font color="FBD8FF">' + noun5 + '</font></font><span class="hover-text">Noun 6: Job title (plural)</span></span> across the USA and your IP is being <span class="hover"><font color="FBD8FF">' + verb5 + '</font></font><span class="hover-text">Verb 5: Past tense</span></span> right now.<br>So you better prepare for the <span class="hover"><font color="FBD8FF">' + noun12 + '</font></font><span class="hover-text">Noun 13: Natural disaster</span></span>, <span class="hover"><font color="FBD8FF">' + noun10 + '</font></font><span class="hover-text">Noun 11: Insect</span></span>.<br>The <span class="hover"><font color="FBD8FF">' + noun12 + '</font></font><span class="hover-text">Noun 13: Natural disaster</span></span> that wipes out the pathetic <span class="hover"><font color="FBD8FF">' + adjective2 + '</font></font><span class="hover-text">Adjective 2</span></span> thing you call your life.<br>You\'re fucking dead, kid.<br><br>I can be anywhere, anytime, and I can <span class="hover"><font color="FBD8FF">' + verb3 + '</font></font><span class="hover-text">Verb 3</span></span> you in over <span class="hover"><font color="FBD8FF">' + adjective6 + '</font></font><span class="hover-text">Adjective 6: Number</span></span> ways, and that\'s just with my bare <span class="hover"><font color="FBD8FF">' + noun6 + '</font></font><span class="hover-text">Noun 7: Body part</span></span>.<br>Not only am I <span class="hover"><font color="FBD8FF">' + adverb1 + '</font></font><span class="hover-text">Adverb 1</span></span> trained in unarmed combat, but I have access to the entire arsenal of <span class="hover"><font color="FBD8FF">' + noun3 + '</font></font><span class="hover-text">Noun 4: Proper</span></span> and I will use it to its full extent to wipe your miserable <span class="hover"><font color="FBD8FF">' + noun7 + '</font></font><span class="hover-text">Noun 8: Body part</span></span> off the face of the continent, you <span class="hover"><font color="FBD8FF">' + adjective3 + '</font></font><span class="hover-text">Adjective 3</span></span> shit.<br><br>If only you could have known what unholy retribution your little \"<span class="hover"><font color="FBD8FF">' + adjective4 + '</font></font><span class="hover-text">Adjective 4</span></span>\" comment was about to bring down upon you, maybe you would have held your fucking <span class="hover"><font color="FBD8FF">' + noun8 + '</font></font><span class="hover-text">Noun 9: Body part</span></span>.<br>But you couldn\'t, you didn\'t, and now you\'re paying the price, you goddamn <span class="hover"><font color="FBD8FF">' + noun14 + '</font></font><span class="hover-text">Noun 15: Insult</span></span>.<br>I will shit <span class="hover"><font color="FBD8FF">' + newnoun + '</font></font><span class="hover-text">Noun 2: Abstract</span></span> all <span class="hover"><font color="FBD8FF">' + preposition1 + '</font></font><span class="hover-text">Preposition 1</span></span> you and you will <span class="hover"><font color="FBD8FF">' + verb6 + '</font></font><span class="hover-text">Verb 6: Way to die</span></span> in it.<br>You\'re fucking dead, kiddo.<br><br><br><a href="https://knowyourmeme.com/memes/navy-seal-copypasta" id="copypasta-link" target="_blank">View original meme</a>';
+
+				document.getElementById("result").innerHTML = html;
+			}
+			else {
+				alert("Oops! You left a blank :o");
+			}
+			}
+		document.getElementById("submit-navy").addEventListener("click", navyResult);
+		</script>
+
+		<br><br><br><br><br><br>
+		<div class="footer">
+			Image Credits: <a href="https://icons8.com/icon/56304/edit" class="footer-link" target="_blank">Favicon</a> -- <a href="https://unsplash.com/photos/NFs6dRTBgaM" class="footer-link" target="_blank">Geometric Header</a> -- <a href="https://unsplash.com/photos/POMpXtcVYHo" class="footer-link" target="_blank">Choose Your Words</a></div>
+
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
